@@ -1,0 +1,139 @@
+
+#home_lst_part>div{
+    border: 1px solid black;
+    
+    width: 100%;
+   
+}
+#homelast1{
+    display: flex;
+    background-color: black;
+    color: beige;
+    height: 600px;
+}
+#imgdiv{
+    width: 130%;
+    height: 90%;
+    border-radius: 5px;
+    /* position: relative; */
+}
+#imagelastdiv{
+    width: 70%;
+    padding-left: 90px;
+    padding-top: 50px;
+}
+#contentdiv{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+#homelast2{
+    background-color:gainsboro;
+    height: 500px;
+    /* display: flex; */
+}
+#lowerhead{
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    gap: 30px;
+    box-sizing: border-box;
+}
+#upperhead{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+#color{
+    background-color: red;
+    height: 100px; 
+    /* width: 80%;  */
+    color: white;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#color1{
+    /* width: 250px; */
+    /* border: 1px solid black; */
+    background-color: red;
+    height: 100px;
+    color: white;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#head1{
+    text-align: center;
+}
+.lowerbtn1{
+     margin-left: 70px;
+}
+
+#bottomhead{
+    display: flex;
+}
+#tophead{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 40px;
+}
+#home_last_div3{
+    background-color:#141414;
+    color: white;
+    height: 400px;
+}
+#pdiv{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 50px;
+}
+#pdiv3{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+#pdiv2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+#home_last_div4{
+    height: 500px;
+}
+#image4{
+    height: 100%;
+    width: 100%;
+}
+#home_last_div5{
+    height: 300px;
+    background-color:#141414 ;
+    color: white;
+}
+#bottomhead{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+#bottom1,#bottom2,#bottom3{
+    display: flex;
+    justify-content: space-around;
+}
+#bimg1{
+    height: 50px;
+    padding-right: 60px;
+}
+#head_cont1{
+     font-size: 30px;
+}
+#span{
+    color: red;
+}
+#head_cont2{
+    color: red;
+}
+ 

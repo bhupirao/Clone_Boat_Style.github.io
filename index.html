@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boat-lifestyle</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+  <!-- experiment -->
+  <link rel="stylesheet" href="./styles/product.css">
+  <!-- experiment -->
+  <link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="./styles/home2.css">
+<link rel="stylesheet" href="./styles/home.css">
+
+</head>
+
+<body>
+  <div id="navbar">
+   
+  </div>
+ 
+  <div id="menu">
+
+  </div>
+
+  <div id="more">
+   
+
+  </div>
+  <div id="main">
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        <div class="slide first">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Sail_with_boAt_WEB_2000x.jpg?v=1651669770" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/STONE-1450WEB_48633fa7-b4fb-46d3-b1b2-f90a8bff6df4_2000x.jpg?v=1651669287" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WhatsApp_Image_2022-04-29_at_11.32.28_AM_1600x.jpg?v=1651212278" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Watch_xtend_wbann_1_2000x.jpg?v=1651490614" alt="">
+        </div>
+       
+        
+        
+      </div>
+    
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      
+    </div>
+  
+</div> 
+<h1 id="top-seller">Top Sellers</h1>
+      <div class="seller">
+            <div onclick="fun1()" class="one">
+              <div >Smart Watches</div>
+              <div class="line1"></div>
+            </div>
+            <div onclick="fun2()" class="two">
+              <div >Top Picks</div>
+              <div class="line2"></div>
+            </div>
+            
+      </div>
+      <div id="watches"></div>
+
+
+    <h1>Trending Earphones</h1>
+    <div class="seller"> 
+      <div class="ear" onclick="earbuds()">
+        <div >Earbuds</div>
+        <div id="line1"></div>
+      </div>
+      
+      <div class="wire" onclick="wireless()">
+        <div >Wireless</div>
+        <div id="line2"></div>
+      </div>
+
+      <div class="wired" onclick="wired()">
+        <div>Wired</div>
+        <div id="line3"></div>
+      </div>
+
+    </div> 
+    <div id="airpods"></div> 
+
+    <h1>New Launches</h1>
+    <div id="new-launches">
+   
+      <div id="new-launches-image">
+        <img id="new" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_684x615_Black.jpg?v=1651651602" alt="">
+      </div>
+      <div id="new-launches-data">
+        
+        <h2 id="bluetooth">Blutooth Speakers</h2>
+        <center><div id="sline"></div></center>
+    
+        <h2 id="launchprice">boAt Stone 1450</h2>
+        <h3 id="special">Special Launch Price</h3>
+        <p id="price2">RS. 3999</p>
+        <div id="desdiv">
+        <div id="des">DESCRIPTION
+          
+        </div>
+        <div id="feautures">FEAUTURES</div>
+      </div>
+      <button>EXPLORE NOW</button>
+      <button>ADD TO CART</button>
+      </div>
+    
+    </div>
+    <h1>Trending Headphones</h1>
+    <div id="trendinghead">
+      <div class="wireless" onclick="wireles()">
+        <div>Wireless</div>
+        <div id="trendline1"></div>
+      </div>
+        <div class="anc" onclick="anc()">
+          <div>ANC</div>
+          <div id="trendline2"></div>
+        </div>
+      <div class="wired2" onclick="wired2()">
+        <div>Wired</div>
+        <div id="trendline3"></div>
+      </div>
+    
+    </div>
+    <div id="trenddata"></div>
+
+    <!-- Gaming start -->
+
+    <h1>Gaming</h1>
+    
+    <div id="gaming"></div>
+
+  <div id="home_lst_part"></div>
+  <div id="footer">
+  
+  </div> 
+  <!-- experiment -->
+  <div class="backdrop">
+  </div>
+</body>
+
+</html>
+<script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/cart.js" type="module"></script>
+<script src="./scripts/home.js"></script>
+<!-- experiment -->
+<script>
+  $(document).ready(function() {
+$(".fa-cart-shopping").click(function() {
+  $(".backdrop").fadeTo(200, 1);
+});
+$("#but2").click(function() {
+  $(".backdrop").fadeOut(200);
+});
+});
+</script>

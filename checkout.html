@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="delivery_address">
+            <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_2_256x256_7343fcda-46a7-4e67-885d-1ad75a441106.png?104111" alt="company logo"></a>
+            <p id="discount">Get extra 20% cashback using pay with rewards.</p>
+            <ul type="none"><li>Cart <i class="fa-solid fa-angle-right"></i></li><li>Information <i class="fa-solid fa-angle-right"></i></li><li>Payment</li></ul>
+            <div id="login_signup"><div> <p><i id="user_logo" class="fa-solid fa-user"></i><span>Already have an account?</span> </p> 
+                </div><a href="login.html"><button>LOGIN/SIGNUP</button> </a></div>
+            <h2>DELIVERY ADDRESS</h2>
+            <div>
+                <input type="email" class="email" placeholder="Email"/>
+                <input style="cursor: pointer;" type="checkbox" id=""/> <label for="">Keep me updated on my order status over email and WhatsApp</label> <br>
+            </div><br>
+            <div>
+                <label for="">Country/region*</label><br>
+                <select class="email" >
+                    <option value="india">India</option>
+                </select>
+            </div>
+        
+            <div class="name_div">
+                <input type="text" placeholder="First name"/>
+                <input type="text"  placeholder="Last name"/>
+            </div><br>
+            <input type="text" class="email" placeholder="Address"/>
+           <br> <div class="name_div">
+                <input type="text" placeholder="Apartment,suite, etc. (optional)"/>
+                <input type="text" placeholder="City"/>
+            </div>
+            <label for="">State* <br><select  id="state">
+                <option value="State">State</option>
+                <option value="ap">Andhra Pradesh</option>
+                <option value="arp">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="hp">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="mp">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+            </select></label>
+            <input type="number" id="pincode" placeholder="PIN code"/><br>
+            <br><input type="number"  class="email" placeholder="Phone"/><label style="color:red;">Please enter correct phone number</label><br>
+           <br> <input style="cursor: pointer;" type="checkbox" id=""/> <label for="">	Save this information for next time</label><br>
+           <button onclick='Countinue_to_payment()' class="payment">Countinue to payment</button>
+            <div id="panel">
+               <h1>CHOOSE PAYMENT METHOD</h1>
+               <div class="payment_methord">
+                    <div>
+                        <input style="cursor: pointer;" type="radio"> <img  class="payment_logo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/payu1.png?v=1633523127" alt="">
+                    </div>
+                    <div>
+                        <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://magmarkets.com/wp-content/uploads/2021/04/Visa-Logo-2006-2014.png" alt="">
+                        <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://cdn.vox-cdn.com/thumbor/UKSLdttYoIK2bv1gd231rqL4eiQ=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13674554/Mastercard_logo.jpg" alt="">
+                        <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://logowik.com/content/uploads/images/amex-card1708.jpg" alt="">
+                        <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6khjRtYsB5ttPcwhErq0fVPNTDGGeXBZgkYXOhy-60Iyd8btTY_f6U2q-oOnzm2px_lw&usqp=CAU" alt="">
+                        <label for="">and more...</label>           
+                    </div>
+               </div>
+               <div class="payment_methord">
+                <div>
+                    <input style="cursor: pointer;" type="radio"> <img  class="payment_logo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/razorpay1.png?v=1633523849" alt="">
+                </div>
+                <div>
+                    <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://magmarkets.com/wp-content/uploads/2021/04/Visa-Logo-2006-2014.png" alt="">
+                    <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://cdn.vox-cdn.com/thumbor/UKSLdttYoIK2bv1gd231rqL4eiQ=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13674554/Mastercard_logo.jpg" alt="">
+                    <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://logowik.com/content/uploads/images/amex-card1708.jpg" alt="">
+                    <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6khjRtYsB5ttPcwhErq0fVPNTDGGeXBZgkYXOhy-60Iyd8btTY_f6U2q-oOnzm2px_lw&usqp=CAU" alt="">
+                    <label for="">and more...</label>           
+                </div>
+           </div>
+           <div class="payment_methord">
+            <div>
+                <input style="cursor: pointer;" type="radio"> <img  class="payment_logo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/paytm1.png?v=1633523849" alt="">
+            </div>
+            <div>
+                <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://magmarkets.com/wp-content/uploads/2021/04/Visa-Logo-2006-2014.png" alt="">
+                <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://cdn.vox-cdn.com/thumbor/UKSLdttYoIK2bv1gd231rqL4eiQ=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13674554/Mastercard_logo.jpg" alt="">
+                <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRyKC3lho-oOsRNPL-k87EW6vl9xbJPBXHHslBS2_Z1zeGSQGu6aklIyParEDomyyiOsc&usqp=CAU" alt="">
+                <img class="payment_logo" style="border: 1px solid rgb(204, 191, 191); border-radius: 3px;" src="https://logowik.com/content/uploads/images/amex-card1708.jpg" alt="">
+                <label for="">and more...</label>           
+            </div>
+       </div>
+         <div>
+             <h2>Billing address</h2>
+             <p>Select the address that matches your card or payment method.</p> <br>
+             <input style="cursor: pointer;" type="radio" /> Same as shipping address <br> 
+             <hr> 
+             <br><input style="cursor: pointer;" type="radio" /> Use a different billing address 
+         </div>      
+              <br><button onclick="alert(`Hello! Thank you for purchasing products at Boat. Your payment has been confirmed. For more information please visit our website`)" class="payment">PLACE ORDER</button>
+            </div>
+            <br>
+            <hr>
+            <div style="display: flex; justify-content:space-around"><p>Refund policy</p> <p>Privacy policy</p> <p>Terms of service</p></div>
+        </div>
+        <div id="total_amount">
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/checkout.js"></script>

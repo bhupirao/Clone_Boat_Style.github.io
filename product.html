@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/product.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div id="navbar"></div>
+    <div id="menu">
+    </div>
+    <div id="more">
+    </div>
+
+    <!-- <div id="mainfather"> -->
+    <div id="tag"></div>
+    <div id="main_product"></div>
+    <div id="desc"></div>
+    <div id="img_div2"></div>
+   
+    <!-- <div id="main">
+        <div id="bouncerbox">
+        <img  id="bouncer" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_600x.png?v=1625046144">
+    </div>
+    <div id="bouncer_side"></div>
+    < <div id="hiddenbox"></div> -->
+    <!-- </div>  -->
+
+    <div id="footer"></div>
+    
+
+<!-- experiment -->
+<div class="backdrop">
+    
+    <div id="not_main">
+
+      <button id="but2"><i class="fa-solid fa-xmark"></i></button>
+      <div class="ribbon">Free Shipping sitewide | <b>Cash On Delivery</b> available for order value upto <b>₹3000</b></div>
+      <div id="not_main_scroll"></div>
+      <div id="not_main_footer">
+        <div id="discount_div">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/coupon-code_1.png?v=1650373547">
+          <input id="discount" placeholder="Discount Code">
+        </div>
+        <div id="free">
+          <h3>Shipping:</h3>
+          <h3>FREE</h3>
+        </div>
+        <div id="total">
+          <h3>Total:</h3>
+          <h3 id="amount"></h3>
+        </div>
+        <div id="card">
+          <button id="upi">Pay Via UPI/COD</button>
+          <a href="checkout.html"> <button id="atm">Pay Via Card</button></a>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <!-- experiment -->
+<!-- <div id="not_main"></div> -->
+</body>
+</html>
+<script src="./scripts/product.js" type="module"></script>
+<script>
+    $(document).ready(function() {
+  $("#add_cart").click(function() {
+    $(".backdrop").fadeTo(200, 1);
+  });
+  $("#but2").click(function() {
+    $(".backdrop").fadeOut(200);
+  });
+});
+</script>
+<script>
+  $(document).ready(function() {
+$(".fa-cart-shopping").click(function() {
+  $(".backdrop").fadeTo(200, 1);
+});
+$("#but2").click(function() {
+  $(".backdrop").fadeOut(200);
+});
+});
+</script>

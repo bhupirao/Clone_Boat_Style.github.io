@@ -1,0 +1,138 @@
+body{
+    background-color: #252525;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#poster{
+    width: 100%;
+    height: auto;
+    /* margin-top: 65px; */
+}
+h1{
+    color: white;
+}
+#container>h1{
+    margin: 50px;
+    font-size: 45px;
+    line-height: 48px;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 50px; 
+}
+#main>div{
+    text-align: center;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+}
+#main>div:hover{
+    transform: scale(1.01);
+    z-index: 2;
+}
+#main>div>img{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+#main>div>div{
+    background-color: white;
+    text-align: left;
+    padding: 20px 5px 5px 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    margin: 5px;
+}
+#priceBoxMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -25px;
+    
+}
+#priceBox{
+    display: flex;
+}
+#main>div>div>p,h4{
+    margin-top: -10px;
+}
+#priceBox>p:first-child{
+    margin-right: 5px;
+    color: red;
+}
+#priceBox>p:last-child{
+    text-decoration: line-through;
+    color: #838b94;
+    margin-right: 20px;
+}
+
+#rating>i{
+    color: red;
+}
+button{
+    border-radius: 5px ;
+    height: 25px;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#filter{
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    color: white;
+}
+#filter>div{
+    width: 20%;
+}
+#filter>div:first-child{
+    display: flex;
+    background-color: #252525;
+    justify-content:space-between;
+    cursor: pointer;
+}
+select{
+    background-color: #252525;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#discription{
+    margin: 50px; 
+    padding: 50px;
+    color:#838b94;
+}
+#relatedPosts{
+    margin: 50px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#relatedPosts>div{
+    background-color: #25272c;
+    width: 19%;
+}
+#relatedPosts>div>img{
+    width: 100%;
+    height: 150px;
+
+}
+#relatedPosts>div>p{
+    color: white;
+    padding: 5px;
+    text-decoration: underline;
+}
+#relatedPosts>div>a{
+    color: white;
+}
+#filter_icon{
+    margin-right: -50px;
+}
